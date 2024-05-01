@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: redis-pod
+   labels: 
+      app: redis-pod
+spec:
+   containers:
+   - name: redis-container01
+     image:  amansoni2021/docker-kub-final:latest
+     ports:
+     - containerPort: 8084
+       name: redis-pod
